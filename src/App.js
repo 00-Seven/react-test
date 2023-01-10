@@ -1,23 +1,30 @@
-import logo from './logo.svg';
 import './App.css';
+import Title from './Title';
+import ListCards from './ListCards';
+import { useState } from 'react';
+function App() {    
+  const [numbers,setNumbers] = useState(["One","Two","Three","Four","Five","Six"]);    
 
-function App() {
+  const shuffle = (arr) => {
+    let last_index = arr.length - 1;
+    while(last_index > 0) {
+      let random_index = Math.floor(Math.random() * last_index);
+      let temp = arr[last_index];
+      arr[last_index] = arr[random_index];
+      arr[random_index] = temp;
+      last_index--;
+    }    
+    setNumbers([...arr])               
+  }   
+  
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <Title/> 
+                                
+        <button onClick={()=>{shuffle(numbers);}}>Shuffle</button>
+        <ListCards numbers={numbers}/>
+
     </div>
   );
 }

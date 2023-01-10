@@ -1,0 +1,8 @@
+.ListCards{        
+    max-width: 1000px;     
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));                           
+    border: 2px black solid;
+    
+}
