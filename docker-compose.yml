@@ -1,7 +1,7 @@
-version: '3'
+version: '1'
 
 services:
-  dashboard:
+  react:
     container_name: react_test    
     build:
         dockerfile: Dockerfile
@@ -9,6 +9,6 @@ services:
     volumes:
         - ./:/app
     ports:
-        - "2222:80"
+        - "3333:80"
  
 
