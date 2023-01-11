@@ -7,4 +7,22 @@
   color: #b10bdf;  
 }
 
+.ListCards{        
+  max-width: 1000px;     
+  margin: auto;
+  display: grid;  
+  grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+  border: 2px black solid;    
+}
+
+.Card{      
+  margin: 20px;
+  padding: 15px;
+  border-radius: 2px;        
+  font-size: 0.8rem;          
+  transition-duration: 0.4s;    
+  color: #999999;
+  background-color: #ffffff;    
+  border: 2px solid #52d7fc;
+}
 
