@@ -31,9 +31,8 @@ function App() {
     <div className="App">
         <Title/> 
                                 
-        {/* <button onClick={()=>{shuffle(cards);}}>Shuffle</button> */}
-        <input type="text"></input>
-        <button onClick={()=>{addNewCard("Seven")}}>Add Card</button>  
+        {/* <button onClick={()=>{shuffle(cards);}}>Shuffle</button> */}        
+        <button onClick={()=>{addNewCard()}} className='AddButton'>Add Card</button>  
         <div className='ListCards'>
         {
           cards.length > 0 ? cards.map((card) => <Card id={card.id} title={card.title} description={card.description} deleteCard={deleteCard} key={card.id}/>):

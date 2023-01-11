@@ -6,7 +6,20 @@
 .Title {
   color: #b10bdf;  
 }
-
+.AddButton {
+  margin: 10px;
+  padding: 5px 15px;
+  color: #52d7fc;
+  background-color:#ffffff ;
+  border: 3px #52d7fc solid;
+  border-radius: 3px;
+  font-size: 20px;
+  font-weight: 600;
+}
+.AddButton:active{
+  color: #ffffff;
+  background-color: #52d7fc;  
+}
 .ListCards{        
   max-width: 1000px;     
   margin: auto;
