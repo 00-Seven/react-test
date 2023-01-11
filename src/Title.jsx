@@ -4,7 +4,7 @@ const Title = () => {
     const element = React.createElement(
         'h1',
         {className: 'Title'},
-        'My React is working!'
+        'Hello, Welcome My React App'
       );
     return element
 }
