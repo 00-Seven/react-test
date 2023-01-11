@@ -6,7 +6,7 @@ const Card = ({id,title,description,deleteCard}) => {
         <div className="Card">
             <h1>{title}</h1>                  
             <p>{description}</p>
-            <button  onClick={()=>{deleteCard(id)}} >Delete</button>
+            <button  onClick={()=>{deleteCard(id)}} className="DelButton" >Delete</button>
         </div> 
     );
 }

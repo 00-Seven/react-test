@@ -16,6 +16,18 @@
   font-size: 20px;
   font-weight: 600;
 }
+
+.DelButton {  
+  padding: 3px 10px;
+  color: #da1717;
+  background-color: #ffffff;
+  border: 3px #da1717 solid;
+  border-radius: 3px;  
+}
+.DelButton:active{
+  color: #ffffff;
+  background-color: #da1717;
+}
 .AddButton:active{
   color: #ffffff;
   background-color: #52d7fc;  
