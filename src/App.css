@@ -41,3 +41,8 @@
   border-radius: 3px;
 }
 
+@media screen and (max-width: 1000px) {
+  .ListCards {
+    margin: auto 20px;
+  }
+}
